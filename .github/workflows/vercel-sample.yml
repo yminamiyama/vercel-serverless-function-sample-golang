@@ -24,5 +24,4 @@ jobs:
         cache: 'npm'
     - run: npm install -g vercel
     - run: vercel --version
-    - run: vercel login
     - run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
